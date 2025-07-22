@@ -26,7 +26,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @Testcontainers
 public class MySqlPerformanceTest {
 
-    private static final int TOTAL_RECORDS = 10000;
+    private static final int TOTAL_RECORDS = 100_000;
     private static final int BATCH_SIZE = 10_000;
     
     private static final String DATABASE_NAME = "testdb";
