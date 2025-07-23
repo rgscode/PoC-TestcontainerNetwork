@@ -51,6 +51,7 @@ public class MySqlPerformanceTest {
             .withEnv("MYSQL_ROOT_PASSWORD", PASSWORD)
             .withStartupTimeout(Duration.ofMinutes(1))
             .withNetworkMode("host")
+            .withAccessToHost(true)
             .waitingFor(
                 Wait.forLogMessage(".*ready for connections.*\\s", 2)
             );
